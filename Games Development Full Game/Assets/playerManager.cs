@@ -29,8 +29,7 @@ public class playerManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            moveCount++;
-            moveCountText.text = "Moves: " + moveCount;
+            increaseMoveCount();
             allowInput = false;
             for (int i = 0; i < playerControllers.Length; i++)
             {
@@ -40,8 +39,7 @@ public class playerManager : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.D))
         {
-            moveCount++;
-            moveCountText.text = "Moves: " + moveCount;
+            increaseMoveCount();
             allowInput = false;
             for (int i = 0; i < playerControllers.Length; i++)
             {
@@ -110,5 +108,11 @@ public class playerManager : MonoBehaviour
         {
             playerControllers[i].Reset();
         }
+    }
+
+    public void increaseMoveCount()
+    {
+        moveCount++;
+        moveCountText.text = "Moves: " + moveCount;
     }
 }
