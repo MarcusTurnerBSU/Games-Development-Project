@@ -55,12 +55,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\levelManager.cs" />
-    <Compile Include="Assets\playerController.cs" />
-    <Compile Include="Assets\elevatorMovement.cs" />
-    <Compile Include="Assets\playerManager.cs" />
-    <Compile Include="Assets\mainMenuController.cs" />
-    <Compile Include="Assets\LevelController.cs" />
+    <Compile Include="Assets\Scripts\levelManager.cs" />
+    <Compile Include="Assets\Scripts\playerController.cs" />
+    <Compile Include="Assets\Scripts\elevatorMovement.cs" />
+    <Compile Include="Assets\Scripts\mainMenuController.cs" />
+    <Compile Include="Assets\Scripts\playerManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
